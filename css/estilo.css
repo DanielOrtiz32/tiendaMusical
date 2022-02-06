@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color:#a56f19;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+/*header*/
+
+header {
+    width: 100%;
+    height: 650px;
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #413e1f8a, #0F2027), url(../img/tiendaMusical.jpg); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #86888000, hsla(44, 72%, 73%, 0.308), #0F2027), url(../img/tiendaMusical.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+.titulo{
+    margin: 30px;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color: rgb(156, 17, 17) ;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 05px;
+    border-radius: 10px;
+    background-color: #bb8938c7;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.textos-header h1{
+    font-size: 70px;
+    color: #e72b2b;
+    margin-bottom: 10px;
+    border:  solid rgba(0, 0, 0, 0.671);
+    background-color: rgba(0, 0, 0, 0.726);
+}
+.textos-header h2{
+    font-size: 50px;
+    font-weight: 300;
+    color: #e72b2b;
+    border:  solid rgba(0, 0, 0, 0.671);
+    background-color:rgba(0, 0, 0, 0.726);
+}
+
+.estilo{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+/*about us*/
+
+.contenedor01{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen1{
+    width: 40%;
+
+}
+.sobre-nosotros .contenido-texto{
+    width: 40%;
+}
+
+.contenido-texto h3{
+    margin-bottom: 15px;
+}
+
+.contenido-texto h3 span{
+    background: #a56f19;
+    color: rgb(219, 219, 219);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 6px 0  rgba(0, 0, 0, .5);
+    margin-right: 20px;
+    font-size: 30px;
+}
+.contenido-texto p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 20px;
+}
+/*galeria*/
+
+.portafolio{
+    background: #f2f2f2;
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ 
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .8);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background:hsla(44, 91%, 37%, 0.397);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: white;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/*prouctos*/
+
+.contenido{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sec01{
+    background-color: #fff;
+}
+
+.img{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+.imagen{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .8);
+    margin:10;
+    padding: 10px; 
+    
+}
+
+.imagen > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.volver{
+    border: radius 3px; 
+    background-color: brown;
+    color: white;
+}
